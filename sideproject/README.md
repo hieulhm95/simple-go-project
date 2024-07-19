@@ -1,6 +1,3 @@
-# Chợ Tốt backend standard structure
-Simplified version from: https://github.com/carousell/ct-core-standard/#readme
-
 # Install and run on your computer
 
 Run service: `go run main.go service`
@@ -11,17 +8,14 @@ Run worker with Kafka: `go run main.go worker_kafka`
 
 ### Local run
 
-- Spin up dependent services. This will spin up all containers which are necessary services such as Database, Queue,… to run test locally. 
-`make dev-up`
+- Spin up dependent services. This will spin up all containers which are necessary services such as Database, Queue,… to run test locally.
+  `make dev-up`
 
 - Export necessary environment variables
-`export $(xargs < ./setup/.local.env)`
+  `export $(xargs < ./setup/.local.env)`
 
 - Run test locally
-`make test`
+  `make test`
 
-- Terminate all containers. 
-`make dev-down`
-
-
-
+- Terminate all containers.
+  `make dev-down`
